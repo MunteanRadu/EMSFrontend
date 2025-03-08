@@ -1,0 +1,24 @@
+<h2>{{ employee?.firstName }} {{ employee?.lastName }}</h2>
+<div *ngIf="errorMessages.length > 0" class="error-container">
+    <div *ngFor="let error of errorMessages" class="error-message">
+        {{ error }}
+    </div>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>Age</th>
+            <th>Start Date</th>
+            <th>Skill Set</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ employee?.age }}</td>
+            <td>{{ employee?.startDateTime }}</td>
+            <td>{{ employee?.skillSet }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>Thank you for working with us!</p>

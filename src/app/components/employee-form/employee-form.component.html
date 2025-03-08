@@ -1,0 +1,22 @@
+<h2>Add Employee</h2>
+<form (submit)="addEmployee()">
+    <label>First Name:</label>
+    <input type="text" [(ngModel)]="employee.firstName" name="firstName" required /><br />
+
+    <label>Last Name:</label>
+    <input type="text" [(ngModel)]="employee.lastName" name="lastName" required /><br />
+
+    <label>Age:</label>
+    <input type="number" [(ngModel)]="employee.age" name="age" required><br />
+
+    <label>Start Date:</label>
+    <input type="date" [(ngModel)]="employee.startDateTime" name="startDateTime" required><br />
+
+    <label>Birth Date:</label>
+    <input type="date" [(ngModel)]="employee.dateOfBirth" name="dateOfBirth" required><br />
+
+    <label>Skills (comma-separated):</label>
+    <input type="text" [(ngModel)]="skillSetInput" name="skillSet" required><br />
+
+    <button type="submit">Add Employee</button>
+</form>

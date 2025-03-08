@@ -1,0 +1,38 @@
+<h2>Employee List</h2>
+<table>
+    <div *ngIf="error" class="error">
+        <p>{{ error }}</p>
+    </div>
+
+    <div *ngIf="employees.length === 0" class="no-employees">
+        <p>No employees found.</p>
+    </div>
+
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>Start Date</th>
+            <th>Birth Date</th>
+            <th>Skills</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td>{{ employee.firstName }}</td>
+            <td>{{ employee.lastName }}</td>
+            <td>{{ employee.age }}</td>
+            <td>{{ employee.startDateTime | date }}</td>
+            <td>{{ employee.dateOfBirth | date }}</td>
+            <td>
+                {{ employee.skillSet.join(",") }}
+            </td>
+            <td>
+                <a [routerLink]="['employee', employee.id]">View</a> |
+                <button *ngIf="employee.id" (click)="deleteEmployee(employee.id)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
