@@ -21,10 +21,12 @@ export interface Employee{
 export class EmployeeService {
   private apiUrl = environment.apiUrl;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    console.log("plm api url:", this.apiUrl);
+   }
 
   getEmployees(): Observable<Employee[]> {
-    return this.http.get<Employee[]>(this.apiUrl);
+    return this.http.get<Employee[]>(`${this.apiUrl}/Employees`);
   }
 
   getEmployeeById(id: string): Observable<Employee> {

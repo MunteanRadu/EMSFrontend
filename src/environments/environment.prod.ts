@@ -1,5 +1,5 @@
 export const environment = {
     production: true,
-    apiUrl: 'https://employeemanagementsystem-hce9gqfydkhuc8e3.polandcentral-01.azurewebsites.net/api'
+    apiUrl: "emsbackend-cee0h0g6ewfjc7dd.polandcentral-01.azurewebsites.net"
   };
   
