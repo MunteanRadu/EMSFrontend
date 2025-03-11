@@ -22,7 +22,7 @@ export class EmployeeService {
   private apiUrl = environment.apiUrl;
 
   constructor(private http: HttpClient) {
-    console.log("plm api url:", this.apiUrl);
+    console.log("API url:", this.apiUrl);
    }
 
   getEmployees(): Observable<Employee[]> {
