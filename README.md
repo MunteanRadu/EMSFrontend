@@ -19,7 +19,7 @@ The frontend is connected to the backend API, which can be accessed at:
 To run the frontend locally, follow these steps:
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/MunteanRadu/EMSFrontend/tree/master](https://github.com/MunteanRadu/EMSFrontend/tree/master)
+   git clone https://github.com/MunteanRadu/EMSFrontend/tree/master
 2. Navigate to the project directory:
    ```bash
    cd emsapp
