@@ -1,3 +1,35 @@
+# Employee Management System Frontend
+
+This is the frontend for the Employee Management System built using Angular. The application is still in development, and the UI allows users to interact with employee data via the backend API.
+
+## Features:
+- Display employee records
+- Add and delete employee records
+- Responsive and user-friendly interface
+
+## API URL:
+The frontend is connected to the backend API, which can be accessed at:
+[https://black-bush-001ee4703.6.azurestaticapps.net](https://black-bush-001ee4703.6.azurestaticapps.net)
+
+## Current Status:
+- The application is still under development.
+- Some features are in progress and may not be fully functional.
+
+## Installation:
+To run the frontend locally, follow these steps:
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/MunteanRadu/EMSFrontend/tree/master](https://github.com/MunteanRadu/EMSFrontend/tree/master)
+2. Navigate to the project directory:
+   ```bash
+   cd emsapp
+3. Install dependencies:
+   ```bash
+   npm install
+4. Start the development server:
+   ```bash
+   ng serve
+
 # Emsapp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.6.
